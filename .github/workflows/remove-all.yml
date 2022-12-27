@@ -1,4 +1,4 @@
-name: Package Cleanup
+name: Remove all FlowMastr packages
 
 on:
   workflow_dispatch:
