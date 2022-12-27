@@ -1,0 +1,70 @@
+
+name: Remove old FlowMastr packages
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.common-resources'
+        min-versions-to-keep: 1
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.common-auth'
+        min-versions-to-keep: 1
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.common-data'
+        min-versions-to-keep: 1
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.ext-resources-local'
+        min-versions-to-keep: 1
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.ext-resources-aws'
+        min-versions-to-keep: 1
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.common-rest'
+        min-versions-to-keep: 1
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.ext-auth-oauth2'
+        min-versions-to-keep: 1
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.test-docker'
+        min-versions-to-keep: 1
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.test'
+        min-versions-to-keep: 1
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.client'
+        min-versions-to-keep: 1
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.server'
+        min-versions-to-keep: 1
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.test-resources'
+        min-versions-to-keep: 1
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.common'
+        min-versions-to-keep: 1
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.platform'
+        min-versions-to-keep: 1
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.common-utils'
+        min-versions-to-keep: 1
