@@ -9,4 +9,46 @@ jobs:
     steps:
     - uses: actions/delete-package-versions@v3
       with: 
-        package-name: 'com\.flowmastr\..+'
+        package-name: 'com.flowmastr.common-resources'
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.common-auth'
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.common-data'
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.ext-resources-local'
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.ext-resources-aws'
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.common-rest'
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.ext-auth-oauth2'
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.test-docker'
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.test'
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.client'
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.server'
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.test-resources'
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.common'
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.platform'
+    - uses: actions/delete-package-versions@v3
+      with: 
+        package-name: 'com.flowmastr.common-utils'
